@@ -5,7 +5,7 @@
 
 An **AI-powered validation platform** for financial risk management. Automates Excel workbook validation to identify budget overruns, cash flow issues, and resource allocation problems - reducing analysis time from 40 hours to 2 minutes.
 
-**Built for Deloitte Risk Advisory** where analysts manually validated project financials across 200+ engagements. All processing runs locally for data security.
+**Built for Big 4 Risk Advisory** where analysts manually validated project financials across 200+ engagements. All processing runs locally for data security.
 
 ---
 
@@ -66,33 +66,6 @@ curl -X POST http://localhost:5001/api/validate \
   -H "Content-Type: application/json" \
   -d '{"data_filename": "/path/to/data.xlsx", "rules_filename": "/path/to/rules.xlsx"}'
 ```
-
 ---
 
-## Performance
-
-| Workbook | Cells | Rules | Time | vs Manual |
-|----------|-------|-------|------|-----------|
-| Medium | 50K | 25 | 2.3s | ~2 hours |
-| Large | 150K | 50 | 6.1s | ~8 hours |
-| Enterprise | 500K | 100 | 18.4s | ~40 hours |
-
----
-
-## Security
-
-- **Local Processing**: All data stays on-premise
-- **No External APIs**: No cloud dependencies
-- **Auto-deletion**: Files removed after processing
-- **Audit Trail**: Full timestamped validation logs
-- **Compliance**: SOX, GDPR ready
-
----
-
-## License
-
-MIT License - see [LICENSE](LICENSE) file
-
----
-
-**Impact**: Saved 312 hours annually per analyst ($23K at consulting rates), enabling proactive risk management instead of reactive problem-solving.
+**Impact**: Saved 312 hours annually per analyst, enabling proactive risk management instead of reactive problem-solving.
